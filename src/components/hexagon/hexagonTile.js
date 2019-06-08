@@ -10,8 +10,8 @@ class HexagonTile extends Component {
 		this.state = {
       color: "none",
       offset: {
-        x: 146,
-        y: 168
+        x: 219,
+        y: 252
       }
     };
     
@@ -45,30 +45,90 @@ class HexagonTile extends Component {
 					bottom: this.props.bottom
 				}}
 			>
-				<HexagonItem
+        {/* Column 1 */}
+        <HexagonItem
 					hexId={`${this.props.hexTileId}-top-left`}
 					classes="hexagon-item"
 					stroke="#999999"
 					color={this.state.color}
-					left="1px"
-					top="43px"
+					left="2px"
+					top="2px"
 				/>
 				<HexagonItem
 					hexId={`${this.props.hexTileId}-top-left`}
 					classes="hexagon-item"
 					stroke="#999999"
 					color={this.state.color}
-					left="74px"
-					top="1px"
+					left="2px"
+					top="86px"
+				/>
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="2px"
+					top="170px"
+				/>
+        {/* Column 2 */}
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="75px"
+					top="-40px"
+				/>
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="75px"
+					top="44px"
 				/>
 				<HexagonItem
 					hexId={`${this.props.hexTileId}-top-left`}
 					classes="hexagon-item"
 					stroke="#999999"
 					color={this.state.color}
-					left="74px"
-					top="85px"
+					left="75px"
+					top="128px"
 				/>
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="75px"
+					top="212px"
+				/>
+        {/* Column 3 */}
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="148px"
+					top="2px"
+				/>
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="148px"
+					top="86px"
+				/>
+        <HexagonItem
+					hexId={`${this.props.hexTileId}-top-left`}
+					classes="hexagon-item"
+					stroke="#999999"
+					color={this.state.color}
+					left="148px"
+					top="170px"
+				/>
+        {/* Main Tile Hexagon */}
 				<HexagonItem
 					hexId={`${this.props.hexTileId}-top-left`}
 					classes="hexagon-tile-item"
